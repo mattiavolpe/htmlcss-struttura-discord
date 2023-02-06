@@ -36,6 +36,7 @@
   width: 150px;
   height: 100%;
   border: 1px dotted black;
+  background-color: red;
 }
 
 .debug #menu {
@@ -48,6 +49,7 @@
   width: 10%;
   height: 100%;
   border: 1px dotted black;
+  background-color: green;
 }
 
 .debug #nav_bar > button {
@@ -55,6 +57,35 @@
   height: 100%;
   border: 1px dotted black;
   background-color: transparent;
+  background-color: blue;
+}
+
+.debug #header_hero {
+  background-color: orange;
+}
+
+.debug #header_hero > h1 {
+  height: 70px;
+  border: 1px dotted black;
+  background-color: red;
+}
+
+.debug #header_hero > p {
+  height: 100px;
+  border: 1px dotted black;
+  background-color: green;
+}
+
+.debug #header_hero > div {
+  height: 70px;
+}
+
+.debug #header_hero > div > * {
+  background-color: transparent;
+  width: 350px;
+  height: 100%;
+  border: 1px dotted black;
+  background-color: blue;
 }
 
 /* #endregion Debug */
@@ -73,6 +104,32 @@
 #menu {
   justify-content: space-between;
   align-items: center;
+}
+
+#header_hero {
+  margin: 160px 0;
+  text-align: center;
+}
+
+#header_hero > h1 {
+  margin-bottom: 50px;
+}
+
+#header_hero > p {
+  margin-bottom: 40px;
+}
+
+#header_hero > div {
+  justify-content: center;
+  align-items: center;
+}
+
+#download {
+  margin-right: 20px;
+}
+
+#open_browser {
+  margin-left: 20px;
 }
 
 /* #endregion Header */
