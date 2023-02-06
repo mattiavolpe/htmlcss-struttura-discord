@@ -346,6 +346,13 @@ ul {
   margin-bottom: 20px;
 }
 
+#product *:last-child,
+#campaign *:last-child,
+#resources *:last-child,
+#norms *:last-child {
+  margin-bottom: 0;
+}
+
 #app_footer hr {
   margin: 40px 0;
   border: 1px solid #8ea1e1
