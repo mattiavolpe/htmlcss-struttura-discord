@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 /* #endregion Common */
 
 /* #region Utility */
@@ -137,6 +141,77 @@
   border: 1px dotted black;
 }
 
+.debug #footer_menu {
+  background-color: orange;
+}
+
+.debug #footer_menu > div:first-child {
+  width: calc(100% - (17% * 4));
+}
+
+.debug #footer_menu > div:first-child > h3{
+  height: 90px;
+  background-color: red;
+  border: 1px dotted white;
+}
+
+.debug #language {
+  height: 20px;
+  margin: 30px 0;
+}
+
+.debug #language > img {
+  height: 100%;
+  width: 30px;
+}
+
+.debug #language > * {
+  background-color: green;
+  border: 1px dotted white;
+}
+
+.debug #socials > div {
+  background-color: blue;
+  border: 1px dotted white;
+}
+
+.debug #product > h4,
+.debug #campaign > h4,
+.debug #resources > h4,
+.debug #norms > h4 {
+  height: 20px;
+  background-color: #8ea1e1;
+  border: 1px dotted white;
+}
+
+.debug #product > ul > li,
+.debug #campaign > ul > li,
+.debug #resources > ul > li,
+.debug #norms > ul > li {
+  height: 20px;
+  background-color: white;
+  border: 1px dotted white;
+}
+
+.debug #bottom_section {
+  height: 40px;
+  background-color: orange;
+}
+
+.debug #bottom_section > * {
+  height: 100%;
+  background-color: red;
+  border: 1px dotted white;
+}
+
+.debug #bottom_section > div {
+  width: 150px;
+}
+
+.debug #bottom_section > button {
+  width: 100px;
+}
+
 /* #endregion Debug */
 
 /* #region Header */
@@ -215,8 +290,70 @@
   margin-bottom: 50px;
 }
 
-.debug #stay_connected > .container > button {
+#stay_connected > .container > button {
   background-color: #8ea1e1;
 }
 
 /* #endregion Main */
+
+/* #region Footer */
+
+#app_footer {
+  background-color: #23272a;
+  padding: 100px 0;
+}
+
+#footer_menu {
+  align-items: flex-start;
+}
+
+#footer_menu > div {
+  padding-right: 20px;
+}
+
+#product,
+#campaign,
+#resources,
+#norms {
+  width: 17%;
+}
+
+#language,
+#socials {
+  align-items: center;
+}
+
+#language > img {
+  margin-right: 5px;
+}
+
+#language_selection {
+  border: none;
+  background-color: transparent;
+}
+
+#socials > div {
+  width: 25px;
+  height: 25px;
+  margin-right: 25px;
+}
+
+#product *,
+#campaign *,
+#resources *,
+#norms * {
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+#app_footer hr {
+  margin: 40px 0;
+  border: 1px solid #8ea1e1
+}
+
+#bottom_section {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* #endregion Footer */
