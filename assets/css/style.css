@@ -54,7 +54,11 @@ ul {
   border: 1px dotted black;
 }
 
-.debug #menu > * {
+.debug #menu > ul {
+  height: 100%;
+}
+
+.debug #menu > ul > li {
   width: 10%;
   height: 100%;
   border: 1px dotted black;
@@ -230,7 +234,7 @@ ul {
   align-items: center;
 }
 
-#menu {
+#menu > ul {
   justify-content: space-between;
   align-items: center;
 }
