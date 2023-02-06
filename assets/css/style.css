@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Albert Sans', sans-serif;
+}
+
 ul {
   list-style: none;
 }
@@ -19,6 +23,7 @@ ul {
 }
 
 .container {
+  width: 96%;
   max-width: 1140px;
   margin: auto;
 }
