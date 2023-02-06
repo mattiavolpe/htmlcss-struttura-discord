@@ -88,6 +88,24 @@
   background-color: blue;
 }
 
+.debug #app_main > section > .container {
+  height: 550px;
+}
+
+#app_main > section > .flex > .section_text {
+  width: calc(100% / 3);
+  height: 100%;
+  background-color: red;
+  border: 1px dotted black;
+}
+
+#app_main > section > .flex > .section_image {
+  width: calc((100% / 3) * 2);
+  height: 100%;
+  background-color: green;
+  border: 1px dotted black;
+}
+
 /* #endregion Debug */
 
 /* #region Header */
@@ -133,3 +151,21 @@
 }
 
 /* #endregion Header */
+
+/* #region Main */
+
+#app_main > section {
+  padding: 180px 0;
+}
+
+#meet,
+#stay_connected {
+  background-color: #f6f6f6;
+}
+
+#app_main > section > .flex {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* #endregion Main */
