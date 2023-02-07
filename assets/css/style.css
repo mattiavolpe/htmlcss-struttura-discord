@@ -1,3 +1,11 @@
+:root {
+  --white: #ffffff;
+  --black: #23272a;
+  --blue: #3161e0;
+  --grey: #f6f6f6;
+  --violet-blue: #8ea1e1;
+}
+
 /* #region Common */
 
 * {
@@ -8,6 +16,7 @@
 
 body {
   font-family: 'Albert Sans', sans-serif;
+  color: var(--black);
 }
 
 ul {
@@ -73,27 +82,27 @@ ul {
   background-color: blue;
 }
 
-.debug #header_hero {
+.debug #hero {
   background-color: orange;
 }
 
-.debug #header_hero > h1 {
+.debug #hero > .container > h1 {
   height: 70px;
   border: 1px dotted black;
   background-color: red;
 }
 
-.debug #header_hero > p {
+.debug #hero > .container > p {
   height: 100px;
   border: 1px dotted black;
   background-color: green;
 }
 
-.debug #header_hero > div {
+.debug #hero > .container > div {
   height: 70px;
 }
 
-.debug #header_hero > div > * {
+.debug #hero > .container > div > * {
   background-color: transparent;
   width: 350px;
   height: 100%;
@@ -101,7 +110,7 @@ ul {
   background-color: blue;
 }
 
-.debug #app_main > section > .container:not(#stay_connected > .container) {
+.debug #app_main > section > .container:not(#stay_connected > .container, #hero > .container) {
   height: 550px;
   background-color: orange;
 }
@@ -239,20 +248,24 @@ ul {
   align-items: center;
 }
 
-#header_hero {
-  margin: 160px 0;
+/* #endregion Header */
+
+/* #region Main */
+
+#hero {
+  padding: 160px 0;
   text-align: center;
 }
 
-#header_hero > h1 {
+#hero > .container > h1 {
   margin-bottom: 50px;
 }
 
-#header_hero > p {
+#hero > .container > p {
   margin-bottom: 40px;
 }
 
-#header_hero > div {
+#hero > .container > .flex {
   justify-content: center;
   align-items: center;
 }
@@ -265,11 +278,7 @@ ul {
   margin-left: 20px;
 }
 
-/* #endregion Header */
-
-/* #region Main */
-
-#app_main > section {
+#app_main > section:not(#app_main > #hero) {
   padding: 180px 0;
 }
 
